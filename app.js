@@ -106,6 +106,13 @@ function calculateScore(allAnswers) {
   return total;
 }
 
+function getTotalQuestions() {
+  if (typeof config.totalQuestions === 'number' && config.totalQuestions > 0) {
+    return config.totalQuestions;
+  }
+  return (config.checkpoints || []).reduce((sum, cp) => sum + (Array.isArray(cp.questions) ? cp.questions.length : 0), 0);
+}
+
 function getAnswersWithTimerMetadata(currentElapsedSeconds = getCurrentElapsedSeconds()) {
   return {
     ...answers,
@@ -367,7 +374,10 @@ if (questionsUnlocked) {
   }
 
   mapLinkWrap.innerHTML = getMapLinkHtml(checkpoint);
-  locationStatus.textContent = 'Check your location to unlock the next 3 questions.';
+  const qCount = checkpoint?.questions?.length;
+  locationStatus.textContent = qCount
+    ? `Check your location to unlock the next ${qCount} question${qCount === 1 ? '' : 's'}.`
+    : 'Check your location to unlock the questions.';
 }
 
 function renderQuestionInput(q) {
@@ -430,7 +440,7 @@ function showFinal() {
   finalCard.classList.remove('hidden');
   finalMessage.innerHTML = `
     <p><em>Congratulations ${escapeHtml(currentTeam)}!</em></p>
-    <p>Your final score is ${score} out of ${config.checkpoints.length * 3}.</p>
+    <p>Your final score is ${score} out of ${getTotalQuestions()}.</p>
     <p>Final time: ${formatElapsedTime(elapsedSeconds)}.</p>
   `;
 }
@@ -577,12 +587,13 @@ function revealFate() {
   }
 
   fateCard.className = `card fate-card ${isWinner ? 'winner-fate' : 'loser-fate'}`;
+  const totalQuestions = getTotalQuestions();
   fateCard.innerHTML = isWinner ? `
     <span class="eyebrow">Victory unlocked</span>
     <h2>Congratulations! The crown is yours.</h2>
     <p class="fate-team">You won, ${escapeHtml(currentTeam)}!</p>
     <div class="fate-score">
-      <p>Score: ${teamEntry?.score ?? score}/18</p>
+      <p>Score: ${teamEntry?.score ?? score}/${totalQuestions}</p>
       <p>Time: ${escapeHtml(displayElapsedTime)}</p>
     </div>
   ` : `
@@ -592,7 +603,7 @@ function revealFate() {
     <p>The crown went to <strong>${escapeHtml(releasedResults.winner_team)}</strong>.</p>
     <div class="fate-score">
       ${rank ? `<p>Your rank: #${rank}</p>` : ''}
-      <p>Score: ${teamEntry?.score ?? score}/18</p>
+      <p>Score: ${teamEntry?.score ?? score}/${totalQuestions}</p>
       <p>Time: ${escapeHtml(displayElapsedTime)}</p>
     </div>
   `;

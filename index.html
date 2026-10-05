@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,15 +13,16 @@
   <script defer src="app.js?v=20260511-question-time-only"></script>
   <script defer src="participant-debug.js?v=20260512-password-gate"></script>
 </head>
+
 <body>
   <div class="page-glow page-glow-1"></div>
   <div class="page-glow page-glow-2"></div>
 
   <header class="topbar">
     <div>
-      <span class="eyebrow">11th LASIGE Workshop</span>
+      <span class="eyebrow">LASIGE Welcome Day</span>
       <h1>Palace Pursuit: LASIGE Edition</h1>
-      <p class="subtitle">Race between checkpoints, unlock each stage on location, and conquer all 18 questions.</p>
+      <p class="subtitle">Race between checkpoints, unlock each stage on location, and conquer all 15 questions.</p>
     </div>
     <a class="admin-link" href="admin.html">Quizmaster view</a>
   </header>
@@ -28,9 +30,10 @@
   <main class="container">
     <section class="card hero-card">
       <div class="hero-copy">
-        <span class="hero-badge">6 checkpoints / 18 questions / 1 team phone</span>
+        <span class="hero-badge">5 checkpoints / 15 questions / 1 team phone</span>
         <h2>Explore, solve, submit, move.</h2>
-        <p>Pick a team name, answer each batch of 3 questions, then head to the next location to unlock the following stage.</p>
+        <p>Pick a team name, answer each batch of 3 questions, then head to the next location to unlock the following
+          stage.</p>
       </div>
       <div class="hero-stats">
         <div class="hero-stat">
@@ -38,7 +41,7 @@
           <span>radius to unlock questions</span>
         </div>
         <div class="hero-stat">
-          <strong>6</strong>
+          <strong>5</strong>
           <span>checkpoints</span>
         </div>
         <div class="hero-stat">
@@ -53,7 +56,8 @@
         <section class="card" id="teamCard">
           <span class="eyebrow">Checkpoint zero</span>
           <h2>Start the game!</h2>
-          <p>Enter your team name to begin. Your answers and time will be stored online so the quizmaster can follow the game live.</p>
+          <p>Enter your team name to begin. Your answers and time will be stored online so the quizmaster can follow the
+            game live.</p>
           <form id="teamForm">
             <label>
               Team name
@@ -70,7 +74,7 @@
               <span class="eyebrow">Live status</span>
               <h2>Team progress</h2>
             </div>
-            <span class="status-stage-text" id="progressLabel">Stage 1 of 6</span>
+            <span class="status-stage-text" id="progressLabel">Stage 1 of 5</span>
           </div>
 
           <div class="progress-wrap" aria-label="Progress through the stages">
@@ -99,7 +103,8 @@
             <button id="checkLocationBtn" type="button">Check my location</button>
             <button id="debugUnlockBtn" type="button" class="secondary debug-unlock-btn">Debug unlock questions</button>
           </div>
-          <p class="hint">Allow location access when asked. The next 3 questions unlock when you are within 80 meters of the checkpoint.</p>
+          <p class="hint">Allow location access when asked. The next 3 questions unlock when you are within 80 meters of
+            the checkpoint.</p>
         </section>
 
         <section class="card hidden" id="quizCard">
@@ -120,4 +125,5 @@
     <section class="card hidden fate-card" id="fateCard"></section>
   </main>
 </body>
+
 </html>

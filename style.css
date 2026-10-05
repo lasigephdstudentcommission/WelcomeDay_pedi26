@@ -1084,7 +1084,7 @@ a.map-link {
   }
 
   .stage-steps {
-    grid-template-columns: repeat(var(--stage-count, 6), 1fr);
+    grid-template-columns: repeat(var(--stage-count, 5), 1fr);
   }
 
   #teamForm {

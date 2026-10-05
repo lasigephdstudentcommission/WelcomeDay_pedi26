@@ -1,6 +1,6 @@
-# 11th LASIGE Workshop
+# LASIGE Welcome Day 2026
 
-A location-based team quiz. Teams use one phone, choose a team name, answer 18 questions in 6 batches of 3, and unlock the next batch only when they reach the next checkpoint area.
+A location-based team quiz. Teams use one phone, choose a team name, answer 15 questions in 5 batches of 3, and unlock the next batch only when they reach the next checkpoint area.
 
 ## What this project does
 
