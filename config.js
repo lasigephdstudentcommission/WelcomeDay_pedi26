@@ -17,9 +17,12 @@ window.APP_CONFIG = {
       lat: 0,
       lng: 0,
       questions: [ // Beatriz F.
-        { id: 'q1', text: 'TODO', type: 'multiple-choice', options: ['A', 'B', 'C', 'D'], correctAnswer: 'A' },
-        { id: 'q2', text: 'TODO', type: 'multiple-choice', options: ['A', 'B', 'C', 'D'], correctAnswer: 'A' },
-        { id: 'q3', text: 'TODO', type: 'multiple-choice', options: ['A', 'B', 'C', 'D'], correctAnswer: 'A' }
+        { id: 'q1', text: "Before he was called Mario, what was the Nintendo's character named?", type: 'multiple-choice', 
+         options: ['Plumberman', 'Super Guy', 'Jumpman', 'Luigi'], correctAnswer: 'Jumpman' },
+        { id: 'q2', text: 'What does EHR stand for in hospital IT systems?', type: 'multiple-choice', 
+         options: ['Emergency Hospital Record', 'Eletronic Health Record', 'Encrypted Hospital Registry', 'External Health Registry'], correctAnswer: 'Eletronic Health Record' },
+        { id: 'q3', text: "In which year did IBM's Deep Blue beat the world chess champion?", type: 'multiple-choice', 
+         options: ['1997', '2002', '1987', '1995'], correctAnswer: '1997' }
       ]
     },
 
