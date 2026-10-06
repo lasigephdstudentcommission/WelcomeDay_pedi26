@@ -58,9 +58,27 @@ window.APP_CONFIG = {
       lat: 0,
       lng: 0,
       questions: [ // Pedro
-        { id: 'q7', text: 'TODO', type: 'multiple-choice', options: ['A', 'B', 'C', 'D'], correctAnswer: 'A' },
-        { id: 'q8', text: 'TODO', type: 'multiple-choice', options: ['A', 'B', 'C', 'D'], correctAnswer: 'A' },
-        { id: 'q9', text: 'TODO', type: 'multiple-choice', options: ['A', 'B', 'C', 'D'], correctAnswer: 'A' }
+        {
+          id: 'q7', text: 'Which of the following software programs is credited with having the first known easter egg?', type: 'multiple-choice',
+          options: ['The DEC GT40 game Moonlander, where players could fly off-screen to find a hidden McDonald\'s',
+            'The make command on PDP-6/PDP-10 computers, which responded with a 1960s american anti-war slogan if a specific file name was entered',
+            'The Atari 2600 game Adventure, which contained a secret room crediting creator Warren Robinett',
+            'The Deep Thought compiler, which had a hidden variable that always resolved to the number 42'],
+          correctAnswer: 'The make command on PDP-6/PDP-10 computers, which responded with a 1960s american anti-war slogan if a specific file name was entered'
+        },
+        {
+          id: 'q8', text: 'Who is widely recognized as the world\'s first computer programmer for their work on Charles Babbage\'s Analytical Engine?', type: 'multiple-choice',
+          options: ['Alan Turing (1912 – 1954)', 'Grace Hopper (1906 – 1992)', 'John von Neumann (1903 – 1957)', 'Ada Lovelace (1815 – 1852)'],
+          correctAnswer: 'Ada Lovelace (1815 – 1852)'
+        },
+        {
+          id: 'q9', text: 'Two polite ghosts sit down to eat, but each is holding one fork and waiting forever for the other to drop theirs. What curse has struck them?', type: 'multiple-choice',
+          options: ['Memory Leak',
+            'Deadlock',
+            'Race Condition',
+            'Bit Rot'],
+          correctAnswer: 'Deadlock'
+        }
       ]
     },
 
