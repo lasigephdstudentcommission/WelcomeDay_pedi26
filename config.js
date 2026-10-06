@@ -1,8 +1,8 @@
 window.APP_CONFIG = {
   supabaseUrl: 'https://zhoellnhxbnhgxkgzcbt.supabase.co',
   supabaseAnonKey: 'sb_publishable_hg5TgIbu5qB4hTgSv3IRVQ__Xc2AR5l',
-  quizmasterPassword: '#HAKUNAMATATA',
-  unlockRadiusMeters: 80,
+  quizmasterPassword: '#OHANA',
+  unlockRadiusMeters: 110,
   totalQuestions: null, // If null or omitted, it is automatically calculated from checkpoints.
   checkpoints: [
     {
@@ -17,12 +17,18 @@ window.APP_CONFIG = {
       lat: 0,
       lng: 0,
       questions: [ // Beatriz F.
-        { id: 'q1', text: "Before he was called Mario, what was the Nintendo's character named?", type: 'multiple-choice', 
-         options: ['Plumberman', 'Super Guy', 'Jumpman', 'Luigi'], correctAnswer: 'Jumpman' },
-        { id: 'q2', text: 'What does EHR stand for in hospital IT systems?', type: 'multiple-choice', 
-         options: ['Emergency Hospital Record', 'Eletronic Health Record', 'Encrypted Hospital Registry', 'External Health Registry'], correctAnswer: 'Eletronic Health Record' },
-        { id: 'q3', text: "In which year did IBM's Deep Blue beat the world chess champion?", type: 'multiple-choice', 
-         options: ['1997', '2002', '1987', '1995'], correctAnswer: '1997' }
+        {
+          id: 'q1', text: "Before he was called Mario, what was the Nintendo's character named?", type: 'multiple-choice',
+          options: ['Plumberman', 'Super Guy', 'Jumpman', 'Luigi'], correctAnswer: 'Jumpman'
+        },
+        {
+          id: 'q2', text: 'What does EHR stand for in hospital IT systems?', type: 'multiple-choice',
+          options: ['Emergency Hospital Record', 'Eletronic Health Record', 'Encrypted Hospital Registry', 'External Health Registry'], correctAnswer: 'Eletronic Health Record'
+        },
+        {
+          id: 'q3', text: "In which year did IBM's Deep Blue beat the world chess champion?", type: 'multiple-choice',
+          options: ['1997', '2002', '1987', '1995'], correctAnswer: '1997'
+        }
       ]
     },
 
@@ -40,7 +46,7 @@ window.APP_CONFIG = {
       lng: 0,
       questions: [ // Bea G.
         { id: 'q4', text: 'A programmer follows the instructions “Wash, rinse, repeat” literally. What goes wrong?', type: 'multiple-choice', options: ['They forget to use water', 'They get stuck in an infinite loop', 'They delete the shampoo', 'They run out of memory'], correctAnswer: 'They get stuck in an infinite loop' },
-        { id: 'q5', text: 'You encrypt CAT by shifting each letter one place forward in the alphabet. How would you encrypt DOG?', type: 'multiple-choice', options: ['CAT', 'EPF', 'EPH', 'EFP'], correctAnswer: 'EPH'},
+        { id: 'q5', text: 'You encrypt CAT by shifting each letter one place forward in the alphabet. How would you encrypt DOG?', type: 'multiple-choice', options: ['CAT', 'EPF', 'EPH', 'EFP'], correctAnswer: 'EPH' },
         { id: 'q6', text: 'A website asks to save a “cookie.” What does it usually mean?', type: 'multiple-choice', options: ['A snack for the processor', 'A small piece of data stored in your browser', 'A backup of the entire internet', 'A secret computer virus'], correctAnswer: 'A small piece of data stored in your browser' }
       ]
     },
