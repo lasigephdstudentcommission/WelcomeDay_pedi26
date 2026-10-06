@@ -1,6 +1,6 @@
 window.APP_CONFIG = {
-  supabaseUrl: 'https://hzejllwtsowkkawwxdqc.supabase.co/',
-  supabaseAnonKey: 'sb_publishable_7VXAMk_joCrNFKSzJrnMJQ_8E7abVdi',
+  supabaseUrl: 'https://zhoellnhxbnhgxkgzcbt.supabase.co',
+  supabaseAnonKey: 'sb_publishable_hg5TgIbu5qB4hTgSv3IRVQ__Xc2AR5l',
   quizmasterPassword: '#HAKUNAMATATA',
   unlockRadiusMeters: 80,
   totalQuestions: null, // If null or omitted, it is automatically calculated from checkpoints.
@@ -39,9 +39,9 @@ window.APP_CONFIG = {
       lat: 0,
       lng: 0,
       questions: [ // Bea G.
-        { id: 'q4', text: 'TODO', type: 'multiple-choice', options: ['A', 'B', 'C', 'D'], correctAnswer: 'A' },
-        { id: 'q5', text: 'TODO', type: 'multiple-choice', options: ['A', 'B', 'C', 'D'], correctAnswer: 'A' },
-        { id: 'q6', text: 'TODO', type: 'multiple-choice', options: ['A', 'B', 'C', 'D'], correctAnswer: 'A' }
+        { id: 'q4', text: 'A programmer follows the instructions “Wash, rinse, repeat” literally. What goes wrong?', type: 'multiple-choice', options: ['They forget to use water', 'They get stuck in an infinite loop', 'They delete the shampoo', 'They run out of memory'], correctAnswer: 'They get stuck in an infinite loop' },
+        { id: 'q5', text: 'You encrypt CAT by shifting each letter one place forward in the alphabet. How would you encrypt DOG?', type: 'multiple-choice', options: ['CAT', 'EPF', 'EPH', 'EFP'], correctAnswer: 'EPH'},
+        { id: 'q6', text: 'A website asks to save a “cookie.” What does it usually mean?', type: 'multiple-choice', options: ['A snack for the processor', 'A small piece of data stored in your browser', 'A backup of the entire internet', 'A secret computer virus'], correctAnswer: 'A small piece of data stored in your browser' }
       ]
     },
 

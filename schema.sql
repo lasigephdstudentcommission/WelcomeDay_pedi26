@@ -18,6 +18,9 @@ alter table public.teams
 
 alter table public.teams enable row level security;
 
+grant select, insert, update on public.teams to anon;
+grant usage, select on sequence public.teams_id_seq to anon;
+
 -- MVP policies for a public quiz app hosted on GitHub Pages.
 -- These are intentionally simple so the demo works quickly.
 -- Important: anyone with the public frontend can technically read/write this table
