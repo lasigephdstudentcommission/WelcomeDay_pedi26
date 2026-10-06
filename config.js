@@ -7,27 +7,31 @@ window.APP_CONFIG = {
   checkpoints: [
     {
       id: 1,
-      name: 'CP 1 - TODO',
-      description: '',
+      name: 'CP 1 - C6',
+      description: 'C6',
       questionSubtitle: '',
-      funFact: '',
+      funFact: 'The Faculty's motto is "O que hoje não sabemos, amanhã saberemos" ("What we do not know today, we will know tomorrow") a phrase attributed to Portuguese physician and naturalista Garcia da Orta.',
       imageUrl: 'TODO',
       imageFit: 'contain',
-      mapAddress: 'TODO',
-      lat: 0,
-      lng: 0,
+      mapAddress: 'Campo Grande 016, 1749-016 Lisboa',
+      lat: 38.755280,
+      lng: -9.157573,
       questions: [ // Beatriz F.
         {
-          id: 'q1', text: "Before he was called Mario, what was the Nintendo's character named?", type: 'multiple-choice',
-          options: ['Plumberman', 'Super Guy', 'Jumpman', 'Luigi'], correctAnswer: 'Jumpman'
+          id: 'q1', text: "What does CAPTCHA stand for?", type: 'multiple-choice',
+          options: ['Computer Access Protection Through Checking Human Answers', 
+                    'Completely Automated Public Turing test to tell Computers and Humans Apart', 
+                    'Certified Anti-Phising Tool for Checking Human Activity', 
+                    'Controlled Access Program That Checks Humans Automatically'], 
+          correctAnswer: 'Completely Automated Public Turing test to tell Computers and Humans Apart'
         },
         {
-          id: 'q2', text: 'What does EHR stand for in hospital IT systems?', type: 'multiple-choice',
-          options: ['Emergency Hospital Record', 'Eletronic Health Record', 'Encrypted Hospital Registry', 'External Health Registry'], correctAnswer: 'Eletronic Health Record'
-        },
-        {
-          id: 'q3', text: "In which year did IBM's Deep Blue beat the world chess champion?", type: 'multiple-choice',
+          id: 'q2', text: "In which year did IBM's Deep Blue beat the world chess champion?", type: 'multiple-choice',
           options: ['1997', '2002', '1987', '1995'], correctAnswer: '1997'
+        },
+        {
+          id: 'q3', text: "What does EHR stand for in hospital IT systems?", type: 'multiple-choice',
+          options: ['Emergency Hospital Record', 'Eletronic Health Record', 'Encrypted Hospital Registry', 'External Health Registry'], correctAnswer: 'Eletronic Health Record'
         }
       ]
     },
@@ -35,15 +39,15 @@ window.APP_CONFIG = {
 
     {
       id: 2,
-      name: 'CP 2 - TODO',
-      description: '',
+      name: 'CP 2 - Biblioteca Jacques Delors',
+      description: 'Biblioteca Jacques Delors, Caleidoscópio',
       questionSubtitle: '',
-      funFact: '',
+      funFact: "The name Caleidoscópio is associated with the building's unusual geometric design, reminiscente of the changing patterns of a kaleidoscope.",
       imageUrl: 'TODO',
       imageFit: 'contain',
-      mapAddress: 'TODO',
-      lat: 0,
-      lng: 0,
+      mapAddress: 'Campo Grande 18, 1700-162 Lisboa',
+      lat: 38.756846,
+      lng: -9.153518,
       questions: [ // Bea G.
         { id: 'q4', text: 'A programmer follows the instructions “Wash, rinse, repeat” literally. What goes wrong?', type: 'multiple-choice', options: ['They forget to use water', 'They get stuck in an infinite loop', 'They delete the shampoo', 'They run out of memory'], correctAnswer: 'They get stuck in an infinite loop' },
         { id: 'q5', text: 'You encrypt CAT by shifting each letter one place forward in the alphabet. How would you encrypt DOG?', type: 'multiple-choice', options: ['CAT', 'EPF', 'EPH', 'EFP'], correctAnswer: 'EPH' },
@@ -54,15 +58,15 @@ window.APP_CONFIG = {
 
     {
       id: 3,
-      name: 'CP 3 - TODO',
-      description: '',
+      name: 'CP 3 - Jardim Mário Soares',
+      description: 'Lago do Jardim Mário Soares',
       questionSubtitle: '',
-      funFact: '',
+      funFact: 'Mário Soares (1924-2017) was a central figure in Portuguese democracy and served as both Prime Minister and President of Portugal. Formerly known as Jardim do Campo Grande, the Garden was renamed in his honour in 2018, during the 25th of April festivities.',
       imageUrl: 'TODO',
       imageFit: 'contain',
-      mapAddress: 'TODO',
-      lat: 0,
-      lng: 0,
+      mapAddress: 'Campo Grande, 1700-162 Lisboa',
+      lat: 38.755894,
+      lng: -9.152088,
       questions: [ // Pedro
         {
           id: 'q7', text: 'Which of the following software programs is credited with having the first known easter egg?', type: 'multiple-choice',
@@ -88,22 +92,43 @@ window.APP_CONFIG = {
       ]
     },
 
-
-    {
+    /*{
       id: 4,
-      name: 'CP 4 - TODO',
-      description: '',
+      name: 'CP 4 - Hospital Júlio de Matos',
+      description: 'Hospital Júlio de Matos',
       questionSubtitle: '',
-      funFact: '',
+      funFact: 'Instead of one large hospital building, the complex was designed as separate pavilions surrounded by gardens and open spaces, reflecting new ideas about psychiatric care at the time.',
       imageUrl: 'TODO',
       imageFit: 'contain',
-      mapAddress: 'TODO',
-      lat: 0,
-      lng: 0,
-      questions: [ // Mariana
+      mapAddress: 'Av. do Brasil 53, Lisboa',
+      lat: 38.756788,
+      lng: -9.145997,
+      questions: [
         { id: 'q10', text: 'TODO', type: 'multiple-choice', options: ['A', 'B', 'C', 'D'], correctAnswer: 'A' },
         { id: 'q11', text: 'TODO', type: 'multiple-choice', options: ['A', 'B', 'C', 'D'], correctAnswer: 'A' },
         { id: 'q12', text: 'TODO', type: 'multiple-choice', options: ['A', 'B', 'C', 'D'], correctAnswer: 'A' }
+      ]
+    },*/
+
+    
+    {
+      id: 4,
+      name: 'CP 4 - Escola Básica Eugénio dos Santos',
+      description: 'Escola Básica Eugénio dos Santos',
+      questionSubtitle: '',
+      funFact: 'Eugénio dos Santos (1711-1760) was a Portuguese architect and military engineer who played a central role in planning the reconstruction of Lisbon's Baixa Pombalina after the 1755 earthquake.',
+      imageUrl: 'TODO',
+      imageFit: 'contain',
+      mapAddress: 'R. Luís Augusto Palmeirim, 1700-272 Lisboa',
+      lat: 38.754677,
+      lng: -9.144307,
+      questions: [ // Mariana
+        { id: 'q10', text: 'The first message sent over ARPANET, an early computer network and precursor to the modern Internet, in 1969 was intended to be "LOGIN". What was actually transmitted before the system crashed?', type: 'multiple-choice', 
+         options: ['LO', 'LOG', 'LIN', 'L'], correctAnswer: 'LO' },
+        { id: 'q11', text: 'What does the HTTP status code 418 mean?', type: 'multiple-choice', 
+         options: ['Request Timeout', 'I'm a Teapot', 'Temporary Redirect', 'Service Unavailable'], correctAnswer: 'I'm a Teapot' },
+        { id: 'q12', text: 'Fitts's Law primarily predicts:', type: 'multiple-choice', 
+         options: ['How long users remember information', 'The time required to move to and select a target', 'How many options users can process simultaneously', 'The probability of making a typing error'], correctAnswer: 'The time required to move to and select a target' }
       ]
     },
 
