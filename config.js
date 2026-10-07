@@ -10,7 +10,7 @@ window.APP_CONFIG = {
       name: 'CP 1 - C6',
       description: 'C6',
       questionSubtitle: '',
-      funFact: 'The Faculty's motto is "O que hoje não sabemos, amanhã saberemos" ("What we do not know today, we will know tomorrow") a phrase attributed to Portuguese physician and naturalista Garcia da Orta.',
+      funFact: 'The Faculty\'s motto is "O que hoje não sabemos, amanhã saberemos" ("What we do not know today, we will know tomorrow") a phrase attributed to Portuguese physician and naturalista Garcia da Orta.',
       imageUrl: 'c6_fcul.jpg',
       imageFit: 'contain',
       mapAddress: 'Campo Grande 016, 1749-016 Lisboa',
@@ -116,7 +116,7 @@ window.APP_CONFIG = {
       name: 'CP 4 - Escola Básica Eugénio dos Santos',
       description: 'Escola Básica Eugénio dos Santos',
       questionSubtitle: '',
-      funFact: 'Eugénio dos Santos (1711-1760) was a Portuguese architect and military engineer who played a central role in planning the reconstruction of Lisbon's Baixa Pombalina after the 1755 earthquake.',
+      funFact: 'Eugénio dos Santos (1711-1760) was a Portuguese architect and military engineer who played a central role in planning the reconstruction of Lisbon\'s Baixa Pombalina after the 1755 earthquake.',
       imageUrl: 'escola.jpg',
       imageFit: 'contain',
       mapAddress: 'R. Luís Augusto Palmeirim, 1700-272 Lisboa',
@@ -126,8 +126,8 @@ window.APP_CONFIG = {
         { id: 'q10', text: 'The first message sent over ARPANET, an early computer network and precursor to the modern Internet, in 1969 was intended to be "LOGIN". What was actually transmitted before the system crashed?', type: 'multiple-choice', 
          options: ['LO', 'LOG', 'LIN', 'L'], correctAnswer: 'LO' },
         { id: 'q11', text: 'What does the HTTP status code 418 mean?', type: 'multiple-choice', 
-         options: ['Request Timeout', 'I'm a Teapot', 'Temporary Redirect', 'Service Unavailable'], correctAnswer: 'I'm a Teapot' },
-        { id: 'q12', text: 'Fitts's Law primarily predicts:', type: 'multiple-choice', 
+         options: ['Request Timeout', "I'm a Teapot", 'Temporary Redirect', 'Service Unavailable'], correctAnswer: "I'm a Teapot" },
+        { id: 'q12', text: "Fitts's Law primarily predicts:", type: 'multiple-choice', 
          options: ['How long users remember information', 'The time required to move to and select a target', 'How many options users can process simultaneously', 'The probability of making a typing error'], correctAnswer: 'The time required to move to and select a target' }
       ]
     },
